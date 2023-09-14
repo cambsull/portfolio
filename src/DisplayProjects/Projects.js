@@ -1,9 +1,10 @@
 import React from 'react';
 
-function Resume() {
+function DisplayProjects() {
     return (
         <p>Placeholder</p>
-    );
+    )
+    
 }
 
-export default Resume;
+export default DisplayProjects;
