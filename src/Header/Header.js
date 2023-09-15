@@ -1,5 +1,5 @@
 //Functional imports
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet'; //Imports fonts directly into Header.js
 
 //Stylistic imports
@@ -23,12 +23,12 @@ function Header() {
     }
 
     //Handle scrolling to section on select from navbar
-    function scrollToSection(sectionId) {
-        const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth'})
-            }
-    }
+    //function scrollToSection(sectionId) {
+      //  const section = document.getElementById(sectionId);
+      //      if (section) {
+      //          section.scrollIntoView({ behavior: 'smooth'})
+      //      }
+    //}
 
 
     return (
@@ -79,6 +79,7 @@ function Header() {
     <div className={styles.mobileTextLogo} alt="Digital Chemist Web Studio">
                 Digital Chemist Web Studio
     </div>
+    <div style={{color: 'white'}}>Development Build: 0.1</div>
     </>
     );
 
