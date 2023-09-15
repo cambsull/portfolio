@@ -109,7 +109,7 @@
     }
     
     .appHeader img {
-        width: 35rem;
+        width: 30rem;
         height: auto;
         margin-right: 1rem;
         border: 1px solid silver;
@@ -118,11 +118,11 @@
     }
     
     .mobileLogo {
-        display: block;
+        display: none;
     }
     
     .desktopLogo {
-        display: none;
+        display: block;
     }
     
     .mobileTextLogo {
