@@ -45,8 +45,10 @@ function Header() {
         <header className={styles.appHeader}>
             <img className={styles.desktopLogo} src={desktopLogo} alt="Digital Chemist Logo" style={{backgroundImage: `url(${wavyGradient})`}}/>
             <img className={styles.mobileLogo} src={mobileLogo} alt="Digital Chemist Logo" />
-            <nav className={styles.navbar}>
-            {buttons.map((btn, index) => {
+            
+            <nav className={styles.navbar}>    
+                
+                {buttons.map((btn, index) => {
                 const isButtonHovered = hoveredButton === index;
                 const isAnotherButtonHovered = hoveredButton !== null && hoveredButton !== index;
 
@@ -58,23 +60,20 @@ function Header() {
                 buttonStyle.filter = 'blur(1.8px)';
                 }
 
-    return (
-        <button key={index} 
-                className={styles.navButton} 
-                onMouseEnter={() => handleButtonHover(index)} 
-                onMouseLeave={handleButtonLeave}
-                style={buttonStyle}>
-            {btn}
-        </button>
-    );
-})}
-
-
-
-
+                    return (
+                              <button key={index} 
+                               className={styles.navButton} 
+                               onMouseEnter={() => handleButtonHover(index)} 
+                               onMouseLeave={handleButtonLeave}
+                               style={buttonStyle}>
+                               {btn}
+                             </button>
+                              );
+                            }
+                        )
+                    }   
             </nav>
-           
-            
+
     </header>
     <div className={styles.mobileTextLogo} alt="Digital Chemist Web Studio">
                 Digital Chemist Web Studio
