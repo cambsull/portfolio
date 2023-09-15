@@ -55,7 +55,7 @@ function Header() {
                 if (isButtonHovered) {
                     buttonStyle.backgroundImage = `url(${wavyGradient})`;
                 } else if (isAnotherButtonHovered) {
-                buttonStyle.filter = 'blur(2.5px)';
+                buttonStyle.filter = 'blur(1.8px)';
                 }
 
     return (
