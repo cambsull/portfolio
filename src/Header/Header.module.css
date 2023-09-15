@@ -1,0 +1,208 @@
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    .appHeader {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobileLogo {
+        display: block;
+    }
+
+    .desktopLogo {
+        display: none
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .mobileTextLogo {
+        display: flex;
+        justify-content: center;
+        font-family: 'Quantico', 'Lato',Helvetica, Arial, sans-serif;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+
+}
+
+/* Tablet Landscape*/
+@media only screen and (min-width: 769px) and (max-width: 1023px) and (orientation: landscape) {
+    .appHeader {
+        display: flex;
+        position: sticky;
+        z-index: 100;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem 2rem;
+        background-color: var(--base-blue);
+        border-bottom: 1.5px solid silver;
+    }
+    
+    .appHeader img {
+        width: 35rem;
+        height: auto;
+        margin-right: 1rem;
+        border: 1px solid silver;
+        border-radius: 10px;
+        background: no-repeat;
+    }
+    
+    .mobileLogo {
+        display: none;
+    }
+    
+    .desktopLogo {
+        display: block;
+    }
+    
+    .mobileTextLogo {
+        display: none;
+    }
+    
+    .navbar {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .navButton {
+        background: none;
+        border: 1px solid silver;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        transition: filter 0.5s ease-in-out;
+        color: white;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2), 3px 3px 3px 1px rgba(255, 255, 255, 0.5);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    
+}
+
+
+
+
+/* Tablet Portrait*/
+
+@media only screen and (min-width: 769px) and (max-width: 1023px) and (orientation: portrait) {
+    .appHeader {
+        display: flex;
+        position: sticky;
+        z-index: 100;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem 2rem;
+        background-color: var(--base-blue);
+        border-bottom: 1.5px solid silver;
+    }
+    
+    .appHeader img {
+        width: 35rem;
+        height: auto;
+        margin-right: 1rem;
+        border: 1px solid silver;
+        border-radius: 10px;
+        background: no-repeat;
+    }
+    
+    .mobileLogo {
+        display: block;
+    }
+    
+    .desktopLogo {
+        display: none;
+    }
+    
+    .mobileTextLogo {
+        display: none;
+    }
+    
+    .navbar {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .navButton {
+        background: none;
+        border: 1px solid silver;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+        transition: filter 0.5s ease-in-out;
+        color: white;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2), 3px 3px 3px 1px rgba(255, 255, 255, 0.5);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+
+/* Desktop */
+
+@media only screen and (min-width: 1024px) {
+.appHeader {
+    display: flex;
+    position: sticky;
+    z-index: 100;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+    background-color: var(--base-blue);
+    border-bottom: 1.5px solid silver;
+    
+}
+
+.appHeader img {
+    width: 35rem;
+    height: auto;
+    margin-right: 1rem;
+    border: 1px solid silver;
+    border-radius: 10px;
+    background: no-repeat;
+}
+
+.mobileLogo {
+    display: none;
+}
+
+.desktopLogo {
+    display: block;
+}
+
+.mobileTextLogo {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    gap: 1rem;
+}
+
+.navButton {
+    background: none;
+    border: 1px solid silver;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    transition: filter 0.5s ease-in-out;
+    color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2), 3px 3px 3px 1px rgba(255, 255, 255, 0.5);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.navButton:hover{
+    box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.9);
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+}
+}

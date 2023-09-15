@@ -1,0 +1,12 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 150">
+    <defs>
+        <linearGradient id="wavyGradient" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#d689ff" />
+            <stop offset="100%" stop-color="#20376b" />
+        </linearGradient>
+        <mask id="maskWave">
+            <path d="M0 50 Q 150 70 300 50 T 600 50 T 900 50 V 150 H 0 Z" fill="white" />
+        </mask>
+    </defs>
+    <rect x="0" y="0" width="100%" height="100%" fill="url(#wavyGradient)" mask="url(#maskWave)"></rect>
+</svg>
