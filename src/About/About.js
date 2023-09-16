@@ -1,21 +1,23 @@
 import profilePic from '../assets/img/profilePic.jpg';
 import styles from './About.module.css';
 
-function About() {
-    return (
+function About() { 
+    return ( 
+        //Desktop, then mobile.
         <>
         <div className={styles.primaryContainer}>
+          
             <div className={styles.welcomeHero}>
-                
-                    <h2>Welcome!</h2>
-                    <p>Blah blah blah blah blah</p>
-                
-            
-                <img src={profilePic} alt="Cambria Sullivan" />
+            <p><h1>Welcome!</h1></p>
+            <p><h2>I'm glad you're here.</h2></p>
+            <img src={profilePic} alt="Cambria Sullivan" />
+        </div>
+        </div>
+   
+        
 
-            </div>
-        </div>  
-
+        
+        
         <div className={styles.primaryContainerMobile}>
         <h1>Welcome!</h1>
         </div>

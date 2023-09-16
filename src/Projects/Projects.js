@@ -1,8 +1,9 @@
 import React from 'react';
+import kitten from '../assets/img/kittenTestPic.PNG';
 
 function DisplayProjects() {
     return (
-        <p>Projects</p>
+        <img src={kitten} />
     )
     
 }

@@ -10,8 +10,7 @@
    
     font-family: 'Roboto', Helvetica, Arial, sans-serif;
     color: whitesmoke;
-    
-}
+    }
 
 .welcomeHeroMobile {
     display: flex;
@@ -96,25 +95,96 @@
 
 /* Desktop */
 @media only screen and (min-width: 1080px) {
-.primaryContainer {
-    display: flex;
-    margin-top: 1rem;
-}
+    .primaryContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
 
-.welcomeHero {
-    display: flex;
-}
+    .welcomeHero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        color: whitesmoke;
 
-.welcomeHero img {
-    border-radius: 50%;
-}
+    }
 
-.primaryContainerMobile {
-    display: none;
-}
+    .primaryAboutInformationContainer {
+        line-height: 1rem;
+       
+    }
+    .primaryAboutInformationText {
+        text-align: center;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        color: whitesmoke;
 
-.welcomeHeroMobile {
-    display: none;
-}
+    }
+
+    .primaryAboutInformationContainer a {
+        color: gold;
+    }
+    
+    .primaryAboutInformationContainer a:visited {
+        color: silver;
+    }
+
+    
+     .primaryAboutInformationContainer {
+        line-height: 1rem;
+       
+    }
+    .primaryAboutInformationText {
+        text-align: center;
+        color: white;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        color: whitesmoke;
+
+    }
+
+    .primaryAboutInformationContainer a {
+        color: gold;
+    }
+    
+    .primaryAboutInformationContainer a:visited {
+        color: silver;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .welcomeHero img {
+        border-radius: 50%;
+        max-width: 20rem;
+    }
+
+    .primaryContainerMobile {
+        display: none;
+    }
+
+    .welcomeHeroMobile {
+        display: none;
+    }
 
 }

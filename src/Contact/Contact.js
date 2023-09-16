@@ -1,9 +1,10 @@
 import React from 'react';
 //import styles from './Contact.module.css';
+import kitten from '../assets/img/kittenTestPic.PNG';
 
 function Contact() {
     return (
-       <p>Contact</p>
+       <img src={kitten} />
     )
 }
 

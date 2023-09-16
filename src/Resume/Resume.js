@@ -1,8 +1,9 @@
 import React from 'react';
+import kitten from '../assets/img/kittenTestPic.PNG';
 
 function Resume() {
     return (
-        <p>Resume</p>
+        <img src={kitten} />
     );
 }
 
