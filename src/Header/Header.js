@@ -56,7 +56,7 @@ function Header({ onButtonClick  }) {
                 {buttons.map((btn, index) => {
                
                 let buttonStyle = {};
-                if (windowWidth > 768) { //Only apply blurring effect to non-phone devices
+                if (windowWidth > 1281) { //Only apply blurring effect to mobile devices
                     const isButtonHovered = hoveredButton === index;
                     const isAnotherButtonHovered = hoveredButton !== null && hoveredButton !== index;
                 
