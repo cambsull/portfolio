@@ -17,8 +17,6 @@ function App() {
         setDisplayComponent(buttonLabel.toLowerCase());
     }
    
-
-
     return (
        <>
         <Header onButtonClick={handleButtonClick} />
