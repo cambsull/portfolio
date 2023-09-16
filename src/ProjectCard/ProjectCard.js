@@ -2,7 +2,7 @@ import React from 'react';
 
 function ProjectCard() {
     return (
-        <p>Placeholder</p>
+        <p>Project Card</p>
     )
 }
 

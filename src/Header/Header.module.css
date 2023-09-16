@@ -6,7 +6,13 @@
     }
 
     .mobileLogo {
-        display: block;
+        display: flex;
+        justify-content: center;
+    }
+
+    .secondaryContainer {
+        display: flex;
+        justify-content: center;
     }
 
     .desktopLogo {
@@ -14,7 +20,25 @@
     }
 
     .navbar {
-        display: none;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid silver;
+        padding-bottom: .2rem;
+    }
+
+    .navButton {
+        background: none;
+        border: 1px solid silver;
+        border-radius: 20px;    
+        font-size: 0.78rem;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        margin-right: 0.5rem;
+        color: white;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2), 3px 3px 3px 1px rgba(255, 255, 255, 0.5);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+       
+
     }
 
     .mobileTextLogo {
@@ -23,6 +47,8 @@
         font-family: 'Quantico', 'Lato',Helvetica, Arial, sans-serif;
         font-size: 1.5rem;
         color: white;
+        border: 1px solid silver;
+        border-radius: 30px;
     }
 
 
@@ -91,11 +117,7 @@
     
 }
 
-
-
-
 /* Tablet Portrait*/
-
 @media only screen and (min-width: 769px) and (max-width: 1079px) and (orientation: portrait) {
     .appHeader {
         display: flex;
@@ -153,7 +175,6 @@
 
 
 /* Desktop */
-
 @media only screen and (min-width: 1080px) {
     .appHeader {
         display: flex;

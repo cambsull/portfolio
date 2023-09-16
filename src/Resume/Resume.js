@@ -2,8 +2,8 @@ import React from 'react';
 
 function Resume() {
     return (
-        <p>Placeholder</p>
+        <p>Resume</p>
     );
 }
 
-export default Resume;
+export default Resume; 

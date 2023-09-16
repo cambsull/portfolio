@@ -1,0 +1,120 @@
+/*Mobile Portait*/
+@media only screen and (max-width: 768px) {
+.primaryContainer {
+    display: none;
+}
+
+.primaryContainerMobile {
+    display: flex;
+    justify-content: center;
+   
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    color: whitesmoke;
+    
+}
+
+.welcomeHeroMobile {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    color: whitesmoke;
+}
+
+.welcomeHeroMobile img {
+    border-radius: 50%;
+    max-width: 50%;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px 1px rgb(69, 75, 77);
+}
+
+.primaryAboutInformationContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    color: whitesmoke;
+}
+
+.primaryAboutInformationText p {
+    margin-left: 0.2rem;
+    text-align: left;
+    line-height: 1.45rem;
+
+}
+
+.primaryAboutInformationContainer a {
+    color: gold;
+
+}
+
+.primaryAboutInformationContainer a:visited {
+    color: silver;
+}
+}
+
+/* Tablet Landscape*/
+@media only screen and (min-width: 769px) and (max-width: 1079px) and (orientation: landscape) {
+
+    .primaryContainerMobile {
+    display: none;
+}
+
+.primaryContainer {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.welcomeHero {
+    display: flex;
+}
+
+.welcomeHero img {
+    border-radius: 50%;
+}
+
+.primaryContainerMobile {
+    display: none;
+}
+
+.welcomeHeroMobile {
+    display: none;
+}
+
+
+
+
+}
+
+/* Tablet Portrait*/
+@media only screen and (min-width: 769px) and (max-width: 1079px) and (orientation: portrait) {
+.primaryContainerMobile {
+    display: none;
+}
+
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 1080px) {
+.primaryContainer {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.welcomeHero {
+    display: flex;
+}
+
+.welcomeHero img {
+    border-radius: 50%;
+}
+
+.primaryContainerMobile {
+    display: none;
+}
+
+.welcomeHeroMobile {
+    display: none;
+}
+
+}

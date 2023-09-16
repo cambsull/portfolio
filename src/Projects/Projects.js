@@ -2,7 +2,7 @@ import React from 'react';
 
 function DisplayProjects() {
     return (
-        <p>Placeholder</p>
+        <p>Projects</p>
     )
     
 }

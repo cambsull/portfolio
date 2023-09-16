@@ -8,7 +8,7 @@ import desktopLogo from '../assets/img/logo/transparentLogo.svg';
 import wavyGradient from '../assets/svg/wavyGradient.svg';
 import mobileLogo from '../assets/img/logo/faviconTransparent.ico';
 
-function Header() {
+function Header({ onButtonClick  }) {
 
     //Blurring effect for non-selected buttons via state mangement
     const [hoveredButton, setHoveredButton] = useState(null);
@@ -21,15 +21,6 @@ function Header() {
     function handleButtonLeave() {
         setHoveredButton(null);
     }
-
-    //Handle scrolling to section on select from navbar
-    //function scrollToSection(sectionId) {
-      //  const section = document.getElementById(sectionId);
-      //      if (section) {
-      //          section.scrollIntoView({ behavior: 'smooth'})
-      //      }
-    //}
-
 
     return (
         <>
@@ -44,7 +35,7 @@ function Header() {
 
         <header className={styles.appHeader}>
             <img className={styles.desktopLogo} src={desktopLogo} alt="Digital Chemist Logo" style={{backgroundImage: `url(${wavyGradient})`}}/>
-            <img className={styles.mobileLogo} src={mobileLogo} alt="Digital Chemist Logo" />
+            
             
             <nav className={styles.navbar}>    
                 
@@ -65,7 +56,8 @@ function Header() {
                                className={styles.navButton} 
                                onMouseEnter={() => handleButtonHover(index)} 
                                onMouseLeave={handleButtonLeave}
-                               style={buttonStyle}>
+                               style={buttonStyle}
+                               onClick={() => onButtonClick(btn)}>
                                {btn}
                              </button>
                               );
@@ -75,10 +67,12 @@ function Header() {
             </nav>
 
     </header>
+    <div className={styles.secondaryContainer}>
+    <img className={styles.mobileLogo} src={mobileLogo} alt="Digital Chemist Logo" />
+    </div>
     <div className={styles.mobileTextLogo} alt="Digital Chemist Web Studio">
                 Digital Chemist Web Studio
     </div>
-    <div style={{color: 'white'}}>Development Build: 0.1</div>
     </>
     );
 
