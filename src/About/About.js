@@ -11,7 +11,7 @@ function About() {
                     <p>Blah blah blah blah blah</p>
                 
             
-                <img src={profilePic} alt="Photo of Cambria Sullivan" />
+                <img src={profilePic} alt="Cambria Sullivan" />
 
             </div>
         </div>  
@@ -24,7 +24,7 @@ function About() {
                 <h3>I'm glad you're here.</h3>
             </div>
                 <div className={styles.welcomeHeroMobile}>
-                <img src={profilePic} alt="Photo of Cambria Sullivan" />
+                <img src={profilePic} alt="Cambria Sullivan" />
             </div>
             <div className={styles.primaryAboutInformationContainer}>
                 <div className={styles.primaryAboutInformationText}>
