@@ -54,44 +54,157 @@
 /* Tablet Landscape*/
 @media only screen and (min-width: 769px) and (max-width: 1079px) and (orientation: landscape) {
 
-    .primaryContainerMobile {
-    display: none;
-}
+    .primaryContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
 
-.primaryContainer {
-    display: flex;
-    margin-top: 1rem;
-}
+    .welcomeHero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        color: whitesmoke;
 
-.welcomeHero {
-    display: flex;
-}
+    }
 
-.welcomeHero img {
-    border-radius: 50%;
-}
+    .welcomeHero img {
+        border-radius: 50%;
+        max-width: 20rem;
+        border: 1px solid black;
+        box-shadow: 1px 1px 1px 1px rgb(69, 75, 77);
+    }
 
-.primaryContainerMobile {
-    display: none;
-}
+    .primaryAboutInformationContainer {
+        line-height: 1rem;
+       
+    }
+    .primaryAboutInformationText {
+        text-align: center;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        color: whitesmoke;
 
-.welcomeHeroMobile {
-    display: none;
-}
+    }
 
+    .primaryAboutInformationContainer a {
+        color: gold;
+    }
+    
+    .primaryAboutInformationContainer a:visited {
+        color: silver;
+    }
 
+    
+     .primaryAboutInformationContainer {
+        line-height: 1rem;
+       
+    }
+    .primaryAboutInformationText {
+        text-align: center;
+        color: white;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        color: whitesmoke;
 
+    }
+
+    .primaryAboutInformationContainer a {
+        color: gold;
+    }
+    
+    .primaryAboutInformationContainer a:visited {
+        color: silver;
+    }
+                                                                                                
+    .welcomeHeroMobile {
+        display: none;
+    }
 
 }
 
 /* Tablet Portrait*/
 @media only screen and (min-width: 769px) and (max-width: 1079px) and (orientation: portrait) {
-.primaryContainerMobile {
+
+    .primaryContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    .welcomeHero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        color: whitesmoke;
+
+    }
+
+    .welcomeHero img {
+        border-radius: 50%;
+        max-width: 20rem;
+        border: 1px solid black;
+        box-shadow: 1px 1px 1px 1px rgb(69, 75, 77);
+    }
+
+    .primaryAboutInformationContainer {
+        line-height: 1rem;
+       
+    }
+    .primaryAboutInformationText {
+        text-align: center;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        color: whitesmoke;
+
+    }
+
+    .primaryAboutInformationContainer a {
+        color: gold;
+    }
+    
+    .primaryAboutInformationContainer a:visited {
+        color: silver;
+    }
+
+    
+     .primaryAboutInformationContainer {
+        line-height: 1rem;
+       
+    }
+    .primaryAboutInformationText {
+        text-align: center;
+        color: white;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        color: whitesmoke;
+
+    }
+
+    .primaryAboutInformationContainer a {
+        color: gold;
+    }
+    
+    .primaryAboutInformationContainer a:visited {
+        color: silver;
+    }
+
+    .primaryContainerMobile {
     display: none;
+
+    }
+
+    .welcomeHeroMobile {
+        display: none;
+    }
 }
 
 
-}
+
 
 /* Desktop */
 @media only screen and (min-width: 1080px) {

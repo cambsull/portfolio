@@ -33,7 +33,7 @@ function App() {
                 </>
             </CSSTransition>
         </TransitionGroup>
-        <div style={{color: 'white'}}>Development Build: 0.2</div>
+        <div style={{color: 'white'}}>Development Build: 0.3</div>
        </>
        
     )

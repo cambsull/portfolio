@@ -13,9 +13,6 @@ function About() {
             <img src={profilePic} alt="Cambria Sullivan" />
         </div>
         </div>
-   
-        
-
         
         
         <div className={styles.primaryContainerMobile}>
