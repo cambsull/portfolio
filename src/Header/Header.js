@@ -1,5 +1,5 @@
 //Functional imports
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet'; //Imports fonts directly into Header.js
 
 //Stylistic imports
@@ -10,9 +10,23 @@ import mobileLogo from '../assets/img/logo/faviconTransparent.ico';
 
 function Header({ onButtonClick  }) {
 
+    //State to detect window size to prevent blurring effect on mobile (will still happen because it thinks a button press is a hover)
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
     //Blurring effect for non-selected buttons via state mangement
     const [hoveredButton, setHoveredButton] = useState(null);
     const buttons = ['About', 'Projects', 'Resume', 'Contact'];
+
+    useEffect(() => { //Handle not animating on mobile
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth)
+        }
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize); //Cleanup
+        }
+    }, [])
 
     function handleButtonHover(btnId) {
         setHoveredButton(btnId);
@@ -40,16 +54,19 @@ function Header({ onButtonClick  }) {
             <nav className={styles.navbar}>    
                 
                 {buttons.map((btn, index) => {
-                const isButtonHovered = hoveredButton === index;
-                const isAnotherButtonHovered = hoveredButton !== null && hoveredButton !== index;
-
+               
                 let buttonStyle = {};
+                if (windowWidth > 768) { //Only apply blurring effect to non-phone devices
+                    const isButtonHovered = hoveredButton === index;
+                    const isAnotherButtonHovered = hoveredButton !== null && hoveredButton !== index;
+                
 
                 if (isButtonHovered) {
                     buttonStyle.backgroundImage = `url(${wavyGradient})`;
                 } else if (isAnotherButtonHovered) {
                 buttonStyle.filter = 'blur(1.8px)';
                 }
+            }
 
                     return (
                               <button key={index} 
