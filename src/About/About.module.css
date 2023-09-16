@@ -113,6 +113,13 @@
 
     }
 
+    .welcomeHero img {
+        border-radius: 50%;
+        max-width: 20rem;
+        border: 1px solid black;
+        box-shadow: 1px 1px 1px 1px rgb(69, 75, 77);
+    }
+
     .primaryAboutInformationContainer {
         line-height: 1rem;
        
@@ -173,12 +180,6 @@
     
     
     
-    
-    .welcomeHero img {
-        border-radius: 50%;
-        max-width: 20rem;
-    }
-
     .primaryContainerMobile {
         display: none;
     }
