@@ -118,10 +118,15 @@
     .primaryAboutInformationContainer a:visited {
         color: silver;
     }
-                                                                                                
+
     .welcomeHeroMobile {
         display: none;
     }
+
+    .primaryContainerMobile {
+        display: none;
+    }
+
 
 }
 
