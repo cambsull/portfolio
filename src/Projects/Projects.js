@@ -3,7 +3,7 @@ import kitten from '../assets/img/kittenTestPic.PNG';
 
 function DisplayProjects() {
     return (
-        <img src={kitten} />
+        <img src={kitten} alt="Kitten" />
     )
     
 }
