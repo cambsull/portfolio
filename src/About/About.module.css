@@ -46,22 +46,6 @@
 
 }
 
-.primaryAboutInformationText {
-    text-align: center;
-    color: white;
-    font-family: 'Lato', Helvetica, Arial, sans-serif;
-    color: whitesmoke;
-
-}
-
-.primaryAboutInformationContainer a {
-    color: gold;
-}
-
-.primaryAboutInformationContainer a:visited {
-    color: silver;
-}
-
 
 
 
