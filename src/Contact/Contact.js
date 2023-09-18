@@ -28,6 +28,10 @@ const Contact = () => {
   };
 
   const onSubmit = async (data) => {
+    
+    console.log(process.env.REACT_APP_USER_ID)
+
+    /*
     const { name, email, subject, message } = data;  try {
       const templateParams = {
         name,
@@ -45,6 +49,7 @@ const Contact = () => {
     } catch (e) {
       console.log(e);
     }
+    */
   };
 
   return (
