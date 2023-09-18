@@ -1,6 +1,7 @@
 import React from 'react';
 //import styles from './Contact.module.css';
-import kitten from '../assets/img/kittenTestPic.PNG';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 
 import { useForm } from 'react-hook-form';
 
@@ -11,6 +12,19 @@ const Contact = () => {
     reset,
     formState: { errors }
   } = useForm();
+
+  const toastifySuccess = () => {
+    toast('Form sent!', {
+      position: 'bottom-right',
+      autoClose: 5000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,  
+      draggable: false,
+      className: 'submit-feedback success',
+      toastId: 'notifyToast'
+    });
+  };
 
   const onSubmit = async (data) => {
     const { name, email, subject, message } = data;  try {
@@ -26,12 +40,14 @@ const Contact = () => {
         process.env.REACT_APP_USER_ID
       );
       reset();
+      toastifySuccess();
     } catch (e) {
       console.log(e);
     }
   };
 
   return (
+    <>
     <div className='ContactForm'>
       <div className='container'>
         <div className='row'>
@@ -120,6 +136,8 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    <ToastContainer />
+    </>
   );
 };
 
