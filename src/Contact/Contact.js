@@ -1,5 +1,6 @@
 import React from 'react';
 //import styles from './Contact.module.css';
+import emailjs from 'emailjs-com'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 
