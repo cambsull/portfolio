@@ -41,6 +41,10 @@
         margin-top: 10px;
     }
 
+    .formRow textarea {
+        width: 300px;                                                       
+    }
+
     .formInput:focus {
         border-color: #007bff;
         box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
@@ -81,7 +85,6 @@
 
 @media only screen and (min-width: 769px) and (max-width: 1079px) and (orientation: landscape) {
 
-
     .ContactForm {
         display: flex;
         margin-top: 1rem;
@@ -93,7 +96,7 @@
 
     .container {
         justify-content: center;
-        max-width: 800px;
+        max-width: 1000px;
         margin: auto;
         text-align: center;
         font-size: 1.5rem;
@@ -112,6 +115,10 @@
         position: relative;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .formRow textarea {
+        width: 500px;                                                       
     }
 
     .formInput {
@@ -174,7 +181,7 @@
 
     .container {
         justify-content: center;
-        max-width: 800px;
+        max-width: 1000px;
         margin: auto;
         text-align: center;
         font-size: 1.5rem;
@@ -193,6 +200,10 @@
         position: relative;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .formRow textarea {
+        width: 500px;                                                       
     }
 
     .formInput {
@@ -256,7 +267,7 @@
 
     .container {
         justify-content: center;
-        max-width: 800px;
+        width: 800px;
         margin: auto;
         text-align: center;
         font-size: 1.5rem;
@@ -264,6 +275,7 @@
     }
 
     .contactForm {
+        width: 100%;
         margin-top: 1rem;
         background-color: #ffffff;
         padding: 30px;
@@ -272,10 +284,16 @@
     }
 
     .formRow {
-        position: relative;
+        position: relative;                                                                                     
         margin-top: 20px;
         margin-bottom: 20px;
+    
     }
+
+    .formRow textarea {
+        width: 500px;                                                       
+    }
+
 
     .formInput {
         padding: 15px;

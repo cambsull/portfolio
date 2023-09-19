@@ -93,7 +93,7 @@ const Contact = () => {
                                     {// Row 2
                                     }
                                     <div className={styles.formRow}>
-                                        <div className='col'>
+                                        <div>
                                             <input
                                                 type='text'
                                                 name='subject'
@@ -114,9 +114,9 @@ const Contact = () => {
                                     {// Row 3
                                     }
                                     <div className={styles.formRow}>
-                                        <div className='col'>
+                                        <div>
                                             <textarea
-                                                rows={3}
+                                                rows={5}
                                                 name='message'
                                                 {...register('message', {
                                                     required: true
