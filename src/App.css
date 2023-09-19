@@ -1,3 +1,4 @@
+
 body {
     background-color: var(--base-blue);
 }
@@ -22,6 +23,16 @@ body {
   transform: translateX(100%);
   opacity: 0;
   transition: transform 300ms ease-in, opacity 300ms ease-in;
+}
+
+.opacityEffect-enter, 
+.opacityEffect-exit, .opacityEffect-enter-active, .opacityEffect-exit-active {
+  position: absolute;
+  top: 5;
+  left: 5;
+  bottom: 5;
+  right: 5;
+  width: 100%;
 }
 
 .opacityEffect-enter {
