@@ -2,8 +2,6 @@ body {
     background-color: var(--base-blue);
 }
 
-/*Position absolute required or fade in/fade out shifts contents before executing*/
-
 .slide-enter {
   transform: translateX(100%);
   opacity: 0;
@@ -24,4 +22,24 @@ body {
   transform: translateX(100%);
   opacity: 0;
   transition: transform 300ms ease-in, opacity 300ms ease-in;
+}
+
+*/
+
+.opacityEffect-enter {
+  opacity: 0;
+  transition: opacity 600ms ease-out;
+}
+
+.opacityEffect-enter-active {
+  opacity: 1;
+}
+
+.opacityEffect-exit {
+  opacity: 1;
+  transition: opacity 600ms ease-in;
+}
+
+.opacityEffect-exit-active {
+  opacity: 0;
 }

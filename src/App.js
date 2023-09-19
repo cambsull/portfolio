@@ -22,7 +22,7 @@ function App() {
         <Header onButtonClick={handleButtonClick} />
 
         <TransitionGroup>
-            <CSSTransition key={displayComponent} classNames="slide" timeout={300}>
+            <CSSTransition key={displayComponent} classNames="opacityEffect" timeout={300}>
                 <>
                     {displayComponent === 'contact' && <Contact />}
                     {displayComponent === 'projects' && <Projects />}
