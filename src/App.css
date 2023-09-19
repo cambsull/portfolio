@@ -24,8 +24,6 @@ body {
   transition: transform 300ms ease-in, opacity 300ms ease-in;
 }
 
-*/
-
 .opacityEffect-enter {
   opacity: 0;
   transition: opacity 600ms ease-out;

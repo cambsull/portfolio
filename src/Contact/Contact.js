@@ -3,7 +3,6 @@ import styles from './Contact.module.css';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
-
 import { useForm } from 'react-hook-form';
 
 const Contact = () => {
@@ -99,7 +98,7 @@ const Contact = () => {
                                                 type='text'
                                                 name='subject'
                                                 {...register('subject', {
-                                                    required: { value: true, message: 'Please enter a subject' },
+                                                    required: { value: true, message: 'Please enter a subject'},
                                                     maxLength: {
                                                         value: 75,
                                                         message: 'Subject cannot exceed 75 characters'
