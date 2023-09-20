@@ -1,6 +1,26 @@
-.tempCenterDiv {
+.primaryContainer{
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}   
+
+.iconContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    width: 30rem;
+    background-color: var(--base-blue);
+    padding: 20px;
+    border-radius: 8px;
+
+}
+
+.iconLinkedin, .iconDownload, .iconGithub {
+    transition: transform 0.3s;
+    color: gold;
+}
+
+.iconLinkedin:hover, .iconDownload:hover, .iconGithub:hover {
+    transform: scale(1.1);
 }
