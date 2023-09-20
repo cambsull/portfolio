@@ -12,7 +12,7 @@ function Resume() {
         <a href="https://www.linkedin.com/in/cambria-sullivan-ab3647a6/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} size="2x" className={styles.iconLinkedin} />
         </a>
-        <a href="../../public/Cambria_Sullivan_Resume" download>
+        <a href="../../public/Cambria_Sullivan_Resume.pdf" download>
             <FontAwesomeIcon icon={faFileDownload} size="2x" className={styles.iconDownload} />
         </a>
         <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
