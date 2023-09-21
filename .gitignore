@@ -27,6 +27,3 @@ yarn-error.log*
 
 # Local Netlify folder
 .netlify
-
-#resume pdfs
-/src/assets/pdf/Sanitized_Cambria_Sullivan_Resume.pdf
