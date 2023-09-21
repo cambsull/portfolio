@@ -31,9 +31,9 @@
 }
 
 .imagesContainer {
-    width: 92vw;
+    width: 90vw;
     height: auto;
-    overflow: hidden;
+    overflow: scroll;
 }
 .iconLinkedin, .iconDownload, .iconGithub {
     color: gold;
@@ -165,6 +165,7 @@
 
 .iconContainer {
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     width: 38rem; 
     background-color: var(--base-blue);
     padding: 20px;
