@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
@@ -23,7 +22,6 @@ function Resume() {
         
         <div className={styles.pdfContainer}>
            <PDFViewer url="/Cambria_Sullivan_Resume.pdf" />
-           
             </div>
         </div>
     </div>
