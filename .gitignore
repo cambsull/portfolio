@@ -29,5 +29,6 @@ yarn-error.log*
 .netlify
 
 #resume pdfs
-/public/Cambria_Sullivan_Resume.pdf
-/src/assets/pdf/Cambria_Sullivan_Resume.pdf
+/src/assets/pdf/Sanitized_Cambria_Sullivan_Resume.pdf
+/src/assets/img/resumeOne.jpg
+/src/assets/img/resumeTwo.jpg

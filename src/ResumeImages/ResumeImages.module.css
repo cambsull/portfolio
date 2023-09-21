@@ -1,0 +1,67 @@
+@media only screen and (max-width: 768px) {
+.navButton {
+    font-size: 0.8rem;      
+    padding: 5px 10px;   
+    background-color: gold;
+    border: none;          
+    border-radius: 5px;     
+    cursor: pointer;      
+    transition: transform 0.3s; 
+    margin-left: 1rem;
+}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1081px) and (orientation: landscape) {
+    .navButton {
+        font-size: 1rem;      
+        padding: 5px 10px;   
+        background-color: gold;
+        border: none;          
+        border-radius: 5px;     
+        cursor: pointer;      
+        transition: transform 0.3s; 
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1081px) and (orientation: portrait) {
+    .navButton {
+        font-size: 1rem;      
+        padding: 5px 10px;   
+        background-color: gold;
+        border: none;          
+        border-radius: 5px;     
+        cursor: pointer;      
+        transition: transform 0.3s; 
+        margin-left: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 1081px) {
+.navButton {
+    font-size: 1.5rem;      
+    padding: 10px 20px;   
+    background-color: gold;
+    border: none;          
+    border-radius: 5px;     
+    cursor: pointer;      
+    transition: transform 0.3s; 
+    margin-left: 1rem;
+}
+
+.navButton:hover {
+    transform: scale(1.05); 
+}
+}

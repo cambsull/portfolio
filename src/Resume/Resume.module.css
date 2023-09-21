@@ -1,22 +1,191 @@
-.primaryContainer{
+/*Mobile*/
+@media only screen and (max-width: 768px) {
+
+.primaryContainer {
     display: flex;
     justify-content: center;
-    height: 100vh;
+    height: 71.5vh;
     background-color: rgba(0, 0, 0, 0.5);
-}   
+}
 
 .iconContainer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width: 30rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%; 
+    max-width: 98vw;
     background-color: var(--base-blue);
     padding: 20px;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.imagesContainer {
+    width: 92vw;
+    height: auto;
+    overflow: hidden;
+}
+.iconLinkedin, .iconDownload, .iconGithub {
+    color: gold;
+}
 
 }
 
+
+
+/*Tablet Landscape*/
+@media only screen and (min-width: 769px) and (max-width: 1280px) and (orientation: landscape) {
+    .iconContainer {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1080px) and (orientation: landscape) {
+
+
+.primaryContainer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+ 
+
+}
+
+.iconContainer {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%; 
+    max-width: 80vw;
+    height: 100vh;
+    background-color: var(--base-blue);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+   
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.imagesContainer {
+    width: 48vw;
+    max-width: 92vw;
+    height: 90vh;
+    overflow: scroll;
+}
+
+.iconLinkedin, .iconDownload, .iconGithub {
+    color: gold;
+}
+
+
+}
+
+/*Tablet Portrait*/
+
+@media only screen and (min-width: 769px) and (max-width: 1079px) and (orientation: portrait) {
+
+
+    .primaryContainer {
+        display: flex;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.5);
+     
+    
+    }
+    
+    .iconContainer {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        width: 100%; 
+        max-width: 80vw;
+        height: 75vh;
+        background-color: var(--base-blue);
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+       
+    }
+    
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .imagesContainer {
+        width: 79vw;
+        max-width: 92vw;
+        height: 70vh;
+        overflow: scroll;
+    }
+    
+    .iconLinkedin, .iconDownload, .iconGithub {
+        color: gold;
+    }
+    
+    
+
+
+}
+
+
+/*Desktop*/
+@media only screen and (min-width: 1081px) {
+.primaryContainer {
+    display: flex;
+    justify-content: center;
+    
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.iconContainer {
+    margin-top: 0.5rem;
+    width: 38rem; 
+    background-color: var(--base-blue);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.imagesContainer {
+    overflow: hidden;
+}
 .iconLinkedin, .iconDownload, .iconGithub {
     transition: transform 0.3s;
     color: gold;
@@ -25,7 +194,4 @@
 .iconLinkedin:hover, .iconDownload:hover, .iconGithub:hover {
     transform: scale(1.1);
 }
-
-.pdfContainer {
-    display: flex;
 }

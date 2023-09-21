@@ -1,18 +1,20 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
-import resume from '../assets/pdf/Cambria_Sullivan_Resume.pdf';
+import ResumeImages from '../ResumeImages/ResumeImages.js'
+import resumeOne from '../assets/img/resumeOne.jpg';
+import resumeTwo from '../assets/img/resumeTwo.jpg';
+import resume from '../assets/pdf/Sanitized_Cambria_Sullivan_Resume.pdf';
 import styles from './Resume.module.css';
-//import PDFViewer from '../PDFViewer/PDFViewer.js';
-//<div className={styles.pdfContainer}>
-//<PDFViewer url="/Cambria_Sullivan_Resume.pdf" />
-//</div>
+
 
 function Resume() {
 
     return (
+        <>
     <div className={styles.primaryContainer}>
         <div className={styles.iconContainer}>
+            <div className={styles.icons}>
         <a href="https://www.linkedin.com/in/cambria-sullivan-ab3647a6/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} size="2x" className={styles.iconLinkedin} />
         </a>
@@ -22,10 +24,18 @@ function Resume() {
         <a href="https://github.com/cambsull" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} size="2x" className={styles.iconGithub} />
         </a>
-        
-        
         </div>
+       
+        <div className={styles.imagesContainer}>
+            <ResumeImages />
+  
+   
     </div>
+        
+    </div>
+    </div>
+    
+    </>
     );
 }
 
