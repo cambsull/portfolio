@@ -7,13 +7,6 @@ import styles from './Resume.module.css';
 import PDFViewer from '../PDFViewer/PDFViewer.js';
 
 function Resume() {
-    
-     //State manager for pdf display
-    const [numPages, setNumPages] = useState();
-
-    function onPDFLoadSuccess({ numPages }) {
-        setNumPages(numPages);
-      }
 
     return (
     <div className={styles.primaryContainer}>
