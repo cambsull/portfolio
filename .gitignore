@@ -24,3 +24,10 @@ yarn-error.log*
 
 #env
 .env
+
+# Local Netlify folder
+.netlify
+
+#resume pdfs
+/public/Cambria_Sullivan_Resume.pdf
+/src/assets/pdf/Cambria_Sullivan_Resume.pdf

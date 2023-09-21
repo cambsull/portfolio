@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     width: 30rem;
     background-color: var(--base-blue);
     padding: 20px;
@@ -23,4 +24,8 @@
 
 .iconLinkedin:hover, .iconDownload:hover, .iconGithub:hover {
     transform: scale(1.1);
+}
+
+.pdfContainer {
+    display: flex;
 }
