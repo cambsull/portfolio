@@ -2,9 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import ResumeImages from '../ResumeImages/ResumeImages.js'
-import resumeOne from '../assets/img/resumeOne.jpg';
-import resumeTwo from '../assets/img/resumeTwo.jpg';
-import resume from '../assets/pdf/Sanitized_Cambria_Sullivan_Resume.pdf';
 import styles from './Resume.module.css';
 
 
