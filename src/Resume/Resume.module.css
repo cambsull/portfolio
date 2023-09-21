@@ -35,6 +35,7 @@
     height: auto;
     overflow: scroll;
 }
+
 .iconLinkedin, .iconDownload, .iconGithub {
     color: gold;
 }
