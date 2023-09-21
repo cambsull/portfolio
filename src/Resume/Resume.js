@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 import ResumeImages from '../ResumeImages/ResumeImages.js'
+import resume from "../assets/pdf/Sanitized_Cambria_Sullivan_Resume.pdf"
 import styles from './Resume.module.css';
 
 
