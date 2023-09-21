@@ -31,7 +31,7 @@ function App() {
                 </>
             </CSSTransition>
         </TransitionGroup>
-        <div style={{color: 'white'}}>Development Build: 0.5</div>
+        <div style={{color: 'white'}}>Development Build: 0.7</div>
        </>
        
     )

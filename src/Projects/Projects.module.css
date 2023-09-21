@@ -2,5 +2,24 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    margin-top: 1rem;
+}
+
+.tempContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tempContainer p {
+    color: gold;
+    font-family: 'Lato', Helvitica, Arial, sans-serif;
+    font-size: 2rem
 }
 
