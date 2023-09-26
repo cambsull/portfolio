@@ -20,7 +20,7 @@ function App() {
     return (
        <>
         <Header onButtonClick={handleButtonClick} />
-
+        <div className="developmentBuild"><p>Development Build: 0.8</p></div>
         <TransitionGroup>
             <CSSTransition key={displayComponent} classNames="opacityEffect" timeout={300}>
                 <>
@@ -31,7 +31,7 @@ function App() {
                 </>
             </CSSTransition>
         </TransitionGroup>
-        <div style={{color: 'white'}}>Development Build: 0.7</div>
+       
        </>
        
     )

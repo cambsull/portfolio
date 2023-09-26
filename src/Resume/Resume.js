@@ -10,30 +10,26 @@ function Resume() {
 
     return (
         <>
-    <div className={styles.primaryContainer}>
-        <div className={styles.iconContainer}>
-            <div className={styles.icons}>
-        <a href="https://www.linkedin.com/in/cambria-sullivan-ab3647a6/" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} size="2x" className={styles.iconLinkedin} />
-        </a>
-        <a href={resume} download>
-            <FontAwesomeIcon icon={faFileDownload} size="2x" className={styles.iconDownload} />
-        </a>
-        <a href="https://github.com/cambsull" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} size="2x" className={styles.iconGithub} />
-        </a>
-        </div>
-       
-        <div className={styles.imagesContainer}>
-            <ResumeImages />
-  
-   
-    </div>
-        
-    </div>
-    </div>
-    
-    </>
+            <div className={styles.primaryContainer}>
+                <div className={styles.iconContainer}>
+                    <div className={styles.icons}>
+                        <a href="https://www.linkedin.com/in/cambria-sullivan-ab3647a6/" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faLinkedin} size="2x" className={styles.iconLinkedin} />
+                        </a>
+                        <a href={resume} download>
+                            <FontAwesomeIcon icon={faFileDownload} size="2x" className={styles.iconDownload} />
+                        </a>
+                        <a href="https://github.com/cambsull" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faGithub} size="2x" className={styles.iconGithub} />
+                        </a>
+                    </div>
+
+                    <div className={styles.imagesContainer}>
+                        <ResumeImages />
+                    </div>
+                </div>
+            </div>
+        </>
     );
 }
 

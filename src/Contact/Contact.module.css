@@ -1,18 +1,28 @@
 @media only screen and (max-width: 768px) {
 
+    .primaryContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
     .ContactForm {
         display: flex;
         margin-top: 1rem;
         font-family: 'Lato', Helvetica, Arial, sans-serif;
         background-color: var(--base-blue);
         padding: 50px 0;
+        border-radius: 20px;
     }
 
 
     .container {
         justify-content: center;
         max-width: 800px;
-        margin: auto;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
         text-align: center;
         font-size: 1.5rem;
         color: gold;
@@ -83,7 +93,15 @@
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1079px) and (orientation: landscape) {
+@media only screen and (min-width: 769px) and (max-width: 1280px) and (orientation: landscape) {
+
+    .primaryContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 
     .ContactForm {
         display: flex;
@@ -91,13 +109,15 @@
         font-family: 'Lato', Helvetica, Arial, sans-serif;
         background-color: var(--base-blue);
         padding: 50px 0;
+        border-radius: 20px;
     }
 
 
     .container {
         justify-content: center;
         max-width: 1000px;
-        margin: auto;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
         text-align: center;
         font-size: 1.5rem;
         color: gold;
@@ -168,28 +188,38 @@
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1079px) and (orientation: portrait) {
+@media only screen and (min-width: 769px) and (max-width: 1280px) and (orientation: portrait) {
+
+    .primaryContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 
     .ContactForm {
         display: flex;
         margin-top: 1rem;
         font-family: 'Lato', Helvetica, Arial, sans-serif;
         background-color: var(--base-blue);
-        padding: 50px 0;
+        padding: 20px 0;
+        margin-bottom: 1rem;
+        border-radius: 20px;
     }
-
 
     .container {
         justify-content: center;
-        max-width: 1000px;
-        margin: auto;
+        max-width: 1000px;  
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
         text-align: center;
         font-size: 1.5rem;
         color: gold;
     }
 
     .contactForm {
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         background-color: #ffffff;
         padding: 30px;
         border-radius: 10px;
@@ -254,14 +284,24 @@
 
 }
 
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1280px) {
+
+    .primaryContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 
     .ContactForm {
         display: flex;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
         font-family: 'Lato', Helvetica, Arial, sans-serif;
         background-color: var(--base-blue);
         padding: 50px 0;
+        border-radius: 20px;
     }
 
 
@@ -269,6 +309,8 @@
         justify-content: center;
         width: 800px;
         margin: auto;
+        padding-left: 10px;
+        padding-right: 10px;
         text-align: center;
         font-size: 1.5rem;
         color: gold;
@@ -278,7 +320,7 @@
         width: 100%;
         margin-top: 1rem;
         background-color: #ffffff;
-        padding: 30px;
+        padding: 20px;
         border-radius: 10px;
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     }
@@ -340,6 +382,4 @@
     .submitBtn:focus {
         box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
     }
-
-
 }

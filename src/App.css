@@ -37,7 +37,7 @@ body {
 
 .opacityEffect-enter {
   opacity: 0;
-  transition: opacity 400ms ease-out;
+  transition: opacity 200ms ease-out;
 }
 
 .opacityEffect-enter-active {
@@ -46,9 +46,16 @@ body {
 
 .opacityEffect-exit {
   opacity: 1;
-  transition: opacity 400ms ease-in;
+  transition: opacity 200ms ease-in;
 }
 
 .opacityEffect-exit-active {
   opacity: 0;
+}
+
+.developmentBuild p {
+  color: gold;
+  font-size: 1.2rem;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  text-align: center;
 }

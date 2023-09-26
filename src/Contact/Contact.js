@@ -49,6 +49,7 @@ const Contact = () => {
 
     return (
         <>
+            <div className={styles.primaryContainer}>
 
             <div className={styles.ContactForm}>
                 <div className={styles.container}>
@@ -134,6 +135,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
 
             <ToastContainer />

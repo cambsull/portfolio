@@ -1,25 +1,345 @@
-.tempCenterDiv {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+@media only screen and (max-width: 768px) {
+    .primaryContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+        
+    .projectsContainer  {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        width: 95vw; 
+        max-width: 98vw;
+        background-color: var(--base-blue);
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    
+    .displayProjects {
+        max-width: 95vw;
+        height: auto;
+    }
+    
+    .displayProjects span img {
+        max-width: 93vw;
+        border-radius: 40px;
+        transition: transform 0.25s ease;
+        margin-top: 1rem;
+    }
+    
+    .displayProjectsSecondary {
+        max-width: 95vw;
+        height: auto;
+    }
+    
+    .displayProjectsSecondary span img {
+        max-width: 93vw;
+        border-radius: 40px;
+        transition: transform 0.25s ease;
+        margin-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .projectDescriptionHeader a{
+        color: gold;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        border-bottom: 1px solid silver;    
+        font-size: 1.15rem;
+    }
+    
+    .projectDescriptionText {
+        color: gold;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        font-size: 1.05rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: left;
+    }
+    
+    .projectDescriptionTextSecondary {
+       display: none;
+    }
+
+    .gitHubTextLink {
+        color: white;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+    .gitHubTextLink a {
+        color: gold;
+    }
+
+    .gitHubTextLink a:visited {
+        color: gold;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width:1280px) and (orientation: portrait) {
+    .primaryContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+        
+    .projectsContainer  {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        width: 95vw; 
+        max-width: 98vw;
+        background-color: var(--base-blue);
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    
+    .displayProjects {
+        max-width: 95vw;
+        height: auto;
+    }
+    
+    .displayProjects span img {
+        max-width: 93vw;
+        border-radius: 40px;
+        transition: transform 0.25s ease;
+        margin-top: 1rem;
+    }
+    
+    .displayProjectsSecondary {
+        max-width: 95vw;
+        height: auto;
+    }
+    
+    .displayProjectsSecondary span img {
+        max-width: 93vw;
+        border-radius: 40px;
+        transition: transform 0.25s ease;
+        margin-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .projectDescriptionHeader a{
+        color: gold;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        border-bottom: 1px solid silver;    
+        font-size: 1.15rem;
+    }
+    
+    .projectDescriptionText {
+        color: gold;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        font-size: 1.05rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: left;
+    }
+    
+    .projectDescriptionTextSecondary {
+       display: none;
+    }
+
+    .gitHubTextLink {
+        color: white;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .gitHubTextLink a {
+        color: gold;
+    }
+
+    .gitHubTextLink a:visited {
+        color: gold;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) and (orientation: landscape) {
+
+    .primaryContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+        
+    .projectsContainer  {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        width: 95vw; 
+        max-width: 98vw;
+        background-color: var(--base-blue);
+        padding: 20px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    
+    .displayProjects {
+        max-width: 95vw;
+        height: auto;
+    }
+    
+    .displayProjects span img {
+        max-width: 93vw;
+        border-radius: 40px;
+        transition: transform 0.25s ease;
+        margin-top: 1rem;
+    }
+    
+    .displayProjectsSecondary {
+        max-width: 95vw;
+        height: auto;
+    }
+    
+    .displayProjectsSecondary span img {
+        max-width: 93vw;
+        border-radius: 40px;
+        transition: transform 0.25s ease;
+        margin-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .projectDescriptionHeader a{
+        color: gold;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        border-bottom: 1px solid silver;    
+        font-size: 1.15rem;
+    }
+    
+    .projectDescriptionText {
+        color: gold;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        font-size: 1.05rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-align: left;
+    }
+    
+    .projectDescriptionTextSecondary {
+       display: none;
+    }
+
+    .gitHubTextLink {
+        color: white;
+        font-family: 'Lato', Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .gitHubTextLink a {
+        color: gold;
+    }
+
+    .gitHubTextLink a:visited {
+        color: gold;
+    }
+
+}
+
+@media only screen and (min-width: 1281px) {
+.primaryContainer {
+    display: flex;
     flex-direction: column;
-    height: auto;
-    width: 100vw;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.15);
+    justify-content: center; 
+    background-color: rgba(0, 0, 0, 0.5);
+}
+    
+.projectsContainer  {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 40vw; 
+    max-width: 98vw;
+    background-color: var(--base-blue);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.displayProjects {
+    max-width: 40vw;
+    height: auto;
+}
+
+.displayProjects span img {
+    max-width: 45vw;
+    border-radius: 40px;
+    transition: transform 0.25s ease;
     margin-top: 1rem;
 }
 
-.tempContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.displayProjects span img:hover {
+    transform: scale(1.05);
 }
 
-.tempContainer p {
+.displayProjectsSecondary {
+    max-width: 45vw;
+    height: auto;
+}
+
+.displayProjectsSecondary span img {
+    max-width: 40vw;
+    border-radius: 40px;
+    transition: transform 0.25s ease;
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.displayProjectsSecondary span img:hover {
+    transform: scale(1.5);
+}
+
+.projectDescriptionHeader a{
     color: gold;
-    font-family: 'Lato', Helvitica, Arial, sans-serif;
-    font-size: 1.5rem
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid silver;    
+    font-size: 1.15rem;
 }
 
+.projectDescriptionText {
+    color: gold;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 1.05rem;
+    text-align: left;
+}
+
+.projectDescriptionTextSecondary {
+    color: gold;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.gitHubTextLink {
+    color: white;
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.gitHubTextLink a {
+    color: gold;
+}
+
+.gitHubTextLink a:visited {
+    color: gold;
+}
+
+}
