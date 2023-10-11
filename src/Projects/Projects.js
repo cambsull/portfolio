@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Projects.module.css';
 import trakStackLogo from '../assets/img/trakStackLogo.PNG';
 import trakStackFunctioning from '../assets/img/trakStackFunctioning.PNG';
+import trakStackPlaylist from '../assets/img/trakStackPlaylist.PNG';
 
 function Projects() {
     return (
@@ -18,7 +19,7 @@ function Projects() {
                     <a href="https://development--trakstack.netlify.app/" target="_blank" rel="noopener noreferrer"><h1>TrakStack</h1></a>
                 </div>
                 <div className={styles.projectDescriptionText}><p>TrakStack is a React app that lets you search Spotify for tracks, albums, and artists, and then save unique tracks to a custom Spotify playlist!</p></div>
-                <div className={styles.projectDescriptionText}><p>Please note: TrakStack is still in development, and due to Spotify's developer requirements 
+                <div className={styles.projectDescriptionText}><p>Please note: due to Spotify's developer requirements,
                                                                   some features may not work correctly unless you are manually authenicated via the Spotify Developer Dashboard. 
                                                                   Please contact me for assistance.</p></div>
                                                                   <div className={styles.gitHubTextLink}>
@@ -28,8 +29,13 @@ function Projects() {
                     <span>
                     <img src={trakStackFunctioning} alt='TrakStack Functioning' />
                     <div className={styles.projectDescriptionTextSecondary}><p>Hover for a closer look!</p></div>
-                    </span>
-                   
+                    </span>   
+                </div>
+                <div className={styles.displayProjectsSecondary}>
+                    <span>
+                    <img src={trakStackPlaylist} alt='TrakStack Playlist Created!' />
+                    <div className={styles.projectDescriptionTextSecondary}><p>Hover for a closer look!</p></div>
+                    </span>   
                 </div>
             </div>
                 

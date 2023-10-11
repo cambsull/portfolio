@@ -15,6 +15,7 @@ function Header({ onButtonClick  }) {
 
     //Blurring effect for non-selected buttons via state mangement
     const [hoveredButton, setHoveredButton] = useState(null);
+    
     const buttons = ['About', 'Projects', 'Resume', 'Contact'];
 
     useEffect(() => { //Handle not animating on mobile
@@ -56,7 +57,7 @@ function Header({ onButtonClick  }) {
                 {buttons.map((btn, index) => {
                
                 let buttonStyle = {};
-                if (windowWidth > 1281) { //Only apply blurring effect to mobile devices
+                if (windowWidth > 1281) { //Only apply blurring effect to non-mobile devices
                     const isButtonHovered = hoveredButton === index;
                     const isAnotherButtonHovered = hoveredButton !== null && hoveredButton !== index;
                 
