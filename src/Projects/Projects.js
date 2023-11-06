@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Projects.module.css';
-import trakStackLogo from '../assets/img/trakStackLogo.PNG';
+import trakStackLogo from '../assets/img/trakStackLogoProd.PNG';
 import trakStackFunctioning from '../assets/img/trakStackFunctioning.PNG';
 import trakStackPlaylist from '../assets/img/trakStackPlaylist.PNG';
 
