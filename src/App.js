@@ -20,7 +20,6 @@ function App() {
     return (
        <>
         <Header onButtonClick={handleButtonClick} />
-        <div className="developmentBuild"><p>Development Build: 0.8</p></div>
         <TransitionGroup>
             <CSSTransition key={displayComponent} classNames="opacityEffect" timeout={300}>
                 <>
